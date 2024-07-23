@@ -41,6 +41,7 @@ table {
   padding: 0.2em;
   font-size: 2em;
   color: #fff;
+  text-align: center;
 }
 .table__td {
   padding: 1em;
@@ -87,6 +88,7 @@ li:first-child {
 #btn1 {
   background: #e4ebff;
   color: #0c21c9;
+  font-weight: bold;
 }
 #btn2 {
   background: #ffdddd;

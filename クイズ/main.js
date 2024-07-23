@@ -1,11 +1,10 @@
-let question = [
+let questions = [
   [
-    
-    "/imgs/img1.png",
-    "洋服",
-    "/imgs/img2.png",
-    "電車",
-    "1",
+    "第１問",
+    "地球温暖化が進むと、海の近くの陸地は増えるでしょうか？",
+    "◯",
+    "3",
+    "3",
   ],
   [
     `パイナップルは野菜ですか果物ですか`,
@@ -17,12 +16,8 @@ let question = [
   ],
 ];
 
-let quiz = document.getElementById(`question`);
-let answer1 = document.getElementById(`answer1`);
-let answer2 = document.getElementById(`answer2`);
-let myName = document.getElementById(`box`);
-let img1 = document.getElementById(`img1`);
-let img2 = document.getElementById(`img2`);
+let quiz = document.getElementById(`numberQuestions`);
+let question = document.getElementById(`question`);
 let btn1 = document.getElementById(`btn1`);
 let btn2 = document.getElementById(`btn2`);
 
@@ -32,24 +27,21 @@ let quizCnt = 0;
 // 問題数を数える
 
 function quizSet() {
-  quiz.textContent = question[quizCnt][0];
-  answer1.textContent = question[quizCnt][2];
-  img1.src = question[quizCnt][1];
-  answer2.textContent = question[quizCnt][4];
-  img2.src = question[quizCnt][3];
+  quiz.textContent = questions[quizCnt][0];
+  question.textContent = questions[quizCnt][1];
 }
 
 quizSet();
 
 function answerCheck(ans) {
-  if (ans == question[quizCnt][3]) {
+  if (ans == questions[quizCnt][3]) {
     alert("正解だよ");
     correct++;
   } else {
     alert("不正解");
   }
   quizCnt++;
-  if (quizCnt == question.length) {
+  if (quizCnt == questions.length) {
     quiz.textContent = `正解数は${correct}/${quizCnt}点です`;
     img1.remove();
     answer1.remove();
