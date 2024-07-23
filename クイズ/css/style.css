@@ -1,0 +1,99 @@
+body.html.div.h1.h2.ul.li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #0a0a0a;
+  font-weight: 500;
+  background-color: #fff;
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "ＭＳ ゴシック",
+    "MS Gothic", sans-serif;
+  word-wrap: break-word;
+  height: 100%;
+}
+h1 {
+  color: #0a6c06;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3em;
+  padding-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+}
+table {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #0a6c06;
+  border-radius: 10px;
+  border-collapse: 0;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.table__th {
+  background: #0a6c06;
+  padding: 0.2em;
+  font-size: 2em;
+  color: #fff;
+}
+.table__td {
+  padding: 1em;
+  font-size: 1.3em;
+  line-height: 2;
+}
+ul {
+  width: 100%;
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 0 0;
+}
+li:first-child {
+  margin-right: 50px;
+}
+
+.btn-box {
+  text-align: center;
+}
+
+.btn-box button {
+  background: rgb(106, 106, 214);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-box button:hover {
+  opacity: 0.7;
+}
+
+#btn1,
+#btn2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#btn1 {
+  background: #e4ebff;
+  color: #0c21c9;
+}
+#btn2 {
+  background: #ffdddd;
+  color: red;
+}
+
+li a {
+  font-weight: bolder;
+  font-size: 3em;
+}

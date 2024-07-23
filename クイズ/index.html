@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クイズ</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>環境問題クイズ</h1>
+    <table>
+      <tr>
+        <th class="table__th">第１問</th>
+      </tr>
+      <tr>
+        <td class="table__td">
+          地球温暖化が進むと、海の近くの陸地が増ふえる。
+          <br />
+          ◯か×か？
+        </td>
+      </tr>
+    </table>
+
+    <h2 id="question">ここに問題を表示</h2>
+
+    <ul>
+      <li>
+        <button id="btn1" type="button" onclick="answerCheck(1)">
+          <a href="">◯</a>
+        </button>
+      </li>
+      <li>
+        <button id="btn2" type="button" onclick="answerCheck(1)">
+          <a href="">×</a>
+        </button>
+      </li>
+    </ul>
+    <div class="btn-box"></div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
